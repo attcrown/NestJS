@@ -4,9 +4,17 @@
     <router-link to="/about">About</router-link>
     <router-link to="/admin">admin</router-link>
   </nav>
-  <router-view/>
+  <HelloWorld></HelloWorld>
+  <router-view />
 </template>
-
+<script>
+import HelloWorld from './components/HelloWorld.vue';
+export default {
+  components: {
+    HelloWorld
+  }
+}
+</script>
 
 <style>
 #app {
